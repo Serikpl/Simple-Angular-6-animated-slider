@@ -1,0 +1,53 @@
+.test_container{
+    display: flex;
+    width: 100%;
+    height: 100VH;
+    background-color: #ccc;
+    flex-direction: column;
+
+    .slider{
+        width: 90%;
+        height: 500px;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ff0000;
+        flex-direction: row;
+        overflow: hidden;
+        position: relative;
+    }    
+    
+    .slids-container{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        height: 100%;
+        width: 300%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one-slide{
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        background: #bbffaa;
+        &.f_s{
+            background-color: fuchsia;
+        }
+        &.s_s{
+            background-color: yellowgreen;
+        }
+        &.t_s{
+            background-color: azure;
+        }
+    }
+
+    button{
+        background: #000;
+        color: #fff;
+        width: 150px;
+    }
+
+
+}
